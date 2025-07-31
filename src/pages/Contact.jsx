@@ -14,9 +14,9 @@ export default function Contact() {
       </div>
 
       {/* Content Grid */}
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-[10px]">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8 px-[10px]">
         {/* Left Card: Contact Info */}
-        <div className="bg-white rounded-2xl shadow-lg p-8">
+        <div className="bg-white rounded-2xl shadow-lg p-8 md:col-span-2 flex flex-col justify-between">
           <h3 className="text-2xl font-semibold mb-6">Let’s Connect</h3>
           <ul className="space-y-6">
             <li className="flex items-start gap-4">
@@ -54,7 +54,7 @@ export default function Contact() {
         </div>
 
         {/* Right Card: Contact Form */}
-        <div className="bg-white rounded-2xl shadow-lg p-8">
+        <div className="bg-white rounded-2xl shadow-lg p-8 md:col-span-3">
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Full Name */}
