@@ -11,6 +11,7 @@ import Testimonials from './Testimonials'
 import Teams from './Teams'
 import Pricing from './Pricing'
 import  Contact from './Contact'
+import Footer from '../components/Footer'
 // (We’ll add Projects, About, Contact later)
 
 export default function MainPage() {
@@ -33,6 +34,7 @@ export default function MainPage() {
       <Teams />
       <Pricing />
       <Contact />
+      <Footer />
     </div>
   )
 }
