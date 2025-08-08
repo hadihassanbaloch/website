@@ -1,21 +1,20 @@
+
 ---
 deployment:
   tasks:
-    # --- config ---
-    - export NODE="/opt/cpanel/ea-nodejs20/bin/node"
-    - export NPM="/opt/cpanel/ea-nodejs20/bin/npm"
-    - export REPO_ROOT="$(pwd)"
-    - export DEPLOYPATH="/home1/aaswxfeb/creativeenergy.pk/app"   # e.g. /home/USERNAME/domains/sub.example.com/public_html
+    # ==== config (adjust these!) ====
+    - export NPM="/opt/cpanel/ea-nodejs20/bin/npm"         # change to ea-nodejs18 if your server uses Node 18
+    - export APP_ROOT="$(pwd)"
+    - export BUILD_DIR="$APP_ROOT/dist"
+    - export DEPLOYPATH="/home1/aaswxfeb/creativeenergy.pk"       # <-- change USERNAME & path (e.g., /home/USERNAME/subdomains/app)
 
-    # --- build ---
-    - $NPM ci
-    - $NPM run build
+    # ==== build ====
+    - $NPM ci                                              # or `install` if you don't use a lockfile
+    - $NPM run build                                       # produces ./dist
 
-    # --- deploy ---
-    # create deploy dir if missing
+    # ==== deploy ====
     - /bin/mkdir -p "$DEPLOYPATH"
-    # sync built files (deletes removed files on server)
-    - /bin/rsync -a --delete "$REPO_ROOT/dist/" "$DEPLOYPATH/"
+    - /bin/rsync -a --delete "$BUILD_DIR/" "$DEPLOYPATH/"
 
-    # --- optional: keep a simple release marker ---
+    # optional: stamp the deployment
     - /bin/date -u +"%Y-%m-%dT%H:%M:%SZ" > "$DEPLOYPATH/.last_deploy_utc"
