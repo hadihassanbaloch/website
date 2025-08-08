@@ -17,7 +17,7 @@ export default function Navbar() {
               // In-page anchor to scroll to the Services section
               <a
                 href="#services"
-                className="text-gray-800 font-semibold hover:text-red-500 transition-colors"
+                className="text-gray-800 font-semibold hover:text-[#ff5b4d] transition-colors"
               >
                 {label}
               </a>
@@ -25,7 +25,22 @@ export default function Navbar() {
               // In-page anchor to scroll to the Projects section
               <a
                 href="#projects"
-                className="text-gray-800 font-semibold hover:text-red-500 transition-colors"
+                className="text-gray-800 font-semibold hover:text-[#ff5b4d] transition-colors"
+              >
+                {label}
+              </a>
+            ) :label === 'About' ? (
+              // In-page anchor to scroll to the About section
+              <a
+                href="#clients"
+                className="text-gray-800 font-semibold hover:text-[#ff5b4d] transition-colors"
+              >
+                {label}
+              </a>
+            ) :label ==='Contact' ? (
+              <a
+                href="#contact"
+                className="text-gray-800 font-semibold hover:text-[#ff5b4d] transition-colors"
               >
                 {label}
               </a>
@@ -33,7 +48,7 @@ export default function Navbar() {
               // Regular NavLink for other items
               <NavLink
                 to={label === 'Home' ? '/' : `/${label.toLowerCase()}`}
-                className="text-gray-800 font-semibold hover:text-red-500 transition-colors"
+                className="text-gray-800 font-semibold hover:text-[#ff5b4d] transition-colors"
               >
                 {label}
               </NavLink>
@@ -43,19 +58,21 @@ export default function Navbar() {
       </ul>
 
       {/* Book a Call button */}
-      <button
-        className="
-          hidden md:inline-block 
-          bg-red-500 text-white 
-          px-6 py-2 rounded-full 
-          shadow-lg 
-          transition-transform transition-shadow duration-200 ease-out
-          hover:scale-105 hover:shadow-2xl
-          focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-opacity-75
-        "
-      >
-        Book a Call
-      </button>
+      <a href="#contact">
+        <button
+          className="
+            hidden md:inline-block 
+            bg-[#ff5b4d] text-white 
+            px-6 py-2 rounded-full 
+            shadow-lg 
+            transition-transform transition-shadow duration-200 ease-out
+            hover:scale-105 hover:shadow-2xl
+            focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-opacity-75
+          "
+        >
+          Book a Call
+        </button>
+      </a>
 
       {/* Mobile menu toggle */}
       <button className="md:hidden text-white">☰</button>

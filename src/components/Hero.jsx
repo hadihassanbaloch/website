@@ -19,7 +19,7 @@ export default function Hero() {
           <h1 className="text-4xl font-bold text-gray-900 md:text-5xl lg:text-7xl text-center">
             Creative Energy
           </h1>
-          <h2 className="mt-4 text-center text-xl text-red-500 md:text-2xl lg:text-3xl">
+          <h2 className="mt-4 text-center text-xl text-[#ff5b4d] md:text-2xl lg:text-3xl">
             Igniting Digital Innovation, One Vision at a Time
           </h2>
           <p className="mt-6 text-center text-gray-700 leading-relaxed md:text-lg max-w-3xl mx-auto">
@@ -28,7 +28,7 @@ export default function Hero() {
             solutions that don’t just meet the future—they create it.
           </p>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <button className="flex items-center gap-2 rounded-full bg-red-500 px-6 py-3 text-white shadow-md transition hover:-translate-y-1 hover:shadow-lg">
+            <button className="flex items-center gap-2 rounded-full bg-[#ff5b4d] px-6 py-3 text-white shadow-md transition hover:-translate-y-1 hover:shadow-lg">
               Explore Our Solutions
               <svg
                 className="w-4 h-4"
@@ -41,7 +41,7 @@ export default function Hero() {
                 <path d="m12 5 7 7-7 7" />
               </svg>
             </button>
-            <button className="rounded-full border-2 border-red-500 px-6 py-3 text-red-500 transition hover:bg-red-500 hover:text-white">
+            <button className="rounded-full border-2 border-[#ff5b4d] px-6 py-3 text-red-500 transition hover:bg-red-500 hover:text-white">
               View Portfolio
             </button>
           </div>

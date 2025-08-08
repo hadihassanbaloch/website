@@ -18,7 +18,7 @@ const clients = [
 
 function SlidingRow({ items, altPrefix = "" }) {
   return (
-    <div className="overflow-hidden w-full">
+    < div className="overflow-hidden w-full">
       <div className="flex gap-10 animate-slide-x">
         {items.concat(items).map((item, idx) => (
           <div

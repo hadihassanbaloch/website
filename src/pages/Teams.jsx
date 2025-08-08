@@ -2,53 +2,30 @@ import React from "react";
 
 const team = [
   {
-    name: "Sarah Chen",
+    name: "Hani Hassan",
     title: "CEO & Founder",
     avatar: "/src/assets/team/sarah.jpg",
     linkedin: "#",
   },
   {
-    name: "Marcus Rodriguez",
+    name: "Zeeshan Haider",
     title: "CTO",
     avatar: "/src/assets/team/marcus.jpg",
     linkedin: "#",
   },
   {
-    name: "Elena Kowalski",
-    title: "Lead Designer",
+    name: "Hadi Hassan",
+    title: "Co-Founder & Business Strategist",
     avatar: "/src/assets/team/elena.jpg",
     linkedin: "#",
   },
   {
-    name: "David Thompson",
-    title: "Senior Developer",
+    name: "Afshan Umer",
+    title: "Lead Designer",
     avatar: "/src/assets/team/david.jpg",
     linkedin: "#",
   },
-  {
-    name: "Priya Patel",
-    title: "Marketing Lead",
-    avatar: "/src/assets/team/priya.jpg",
-    linkedin: "#",
-  },
-  {
-    name: "Michael Lee",
-    title: "Product Manager",
-    avatar: "/src/assets/team/michael.jpg",
-    linkedin: "#",
-  },
-  {
-    name: "Alex Kumar",
-    title: "UX Specialist",
-    avatar: "/src/assets/team/alex.jpg",
-    linkedin: "#",
-  },
-  {
-    name: "Sophie Anderson",
-    title: "Business Analyst",
-    avatar: "/src/assets/team/sophie.jpg",
-    linkedin: "#",
-  },
+  
 ];
 
 export default function Teams() {

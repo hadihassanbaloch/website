@@ -33,14 +33,6 @@ export default function Pricing() {
             <p className="text-gray-500 mb-6">
               Perfect for growing businesses with focused project needs
             </p>
-            <div className="flex items-end mb-8">
-              <span className="text-5xl font-extrabold text-gray-900">
-                $2,000
-              </span>
-              <span className="text-lg text-gray-500 ml-2 mb-1">
-                per month
-              </span>
-            </div>
             <ul className="space-y-3 text-base mb-8">
               {[
                 '1 active project',
@@ -90,14 +82,6 @@ export default function Pricing() {
               Ideal for established businesses requiring comprehensive design
               solutions
             </p>
-            <div className="flex items-end mb-8">
-              <span className="text-5xl font-extrabold text-gray-900">
-                $4,000
-              </span>
-              <span className="text-lg text-gray-700 ml-2 mb-1">
-                per month
-              </span>
-            </div>
             <ul className="space-y-3 text-base mb-8">
               {[
                 'Unlimited projects',

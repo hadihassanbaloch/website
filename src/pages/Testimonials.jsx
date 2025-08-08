@@ -4,17 +4,17 @@ const testimonials = [
   {
     quote:
       "Creative Energy transformed our digital presence completely. Their strategic approach to our rebrand and website redesign resulted in unprecedented growth. The team's attention to detail and innovative solutions exceeded all our expectations.",
-    name: "Sarah Chen",
+    name: "Touseef Abbas",
     title: "CEO",
-    company: "TechNova",
+    company: "Bestway Logistics",
     avatar: "/src/assets/testimonials/sarah.jpg",
   },
   {
     quote:
       "Their expertise in fintech UX design helped us create an intuitive platform that our users absolutely love. The conversion rates speak for themselves and we couldn't be happier.",
-    name: "Emily Watson",
-    title: "Chief Marketing Officer",
-    company: "FinanceForward",
+    name: "Muntazir Mehdi",
+    title: "CEO & Founder",
+    company: "Admire Logistics",
     avatar: "/src/assets/testimonials/emily.jpg",
   },
   {
