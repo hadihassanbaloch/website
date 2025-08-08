@@ -5,7 +5,7 @@ deployment:
     - export NODE="/opt/cpanel/ea-nodejs20/bin/node"
     - export NPM="/opt/cpanel/ea-nodejs20/bin/npm"
     - export REPO_ROOT="$(pwd)"
-    - export DEPLOYPATH="/home1/aaswxfeb/creativeenergy.pk"   # e.g. /home/USERNAME/domains/sub.example.com/public_html
+    - export DEPLOYPATH="/home1/aaswxfeb/creativeenergy.pk/app"   # e.g. /home/USERNAME/domains/sub.example.com/public_html
 
     # --- build ---
     - $NPM ci
