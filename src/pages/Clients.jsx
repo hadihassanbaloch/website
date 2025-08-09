@@ -2,7 +2,7 @@ import React from "react";
 import Figma   from "@/assets/partners/figma.png";
 import OpenAI  from "@/assets/partners/openai.png";
 import AWS     from "@/assets/partners/Amazon.svg";
-import Google  from "@/assets/partners/Google-Cloud-logo.png";
+import Google  from "@/assets/partners/google.png";
 import Azure   from "@/assets/partners/Azure.png";
 
 
