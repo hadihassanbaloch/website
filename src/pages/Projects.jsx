@@ -1,9 +1,9 @@
 // src/pages/Projects.jsx
 import React from 'react'
-import HRMCO from '/src/assets/HRMCO.jpg'
-import Logisticly from '/src/assets/logisticly.jpg'
-import Academicos from '/src/assets/learning.jpg'
-import SetRestGo from '/src/assets/SetRestGo.jpg'
+import HRMCO      from "../assets/HRMCO.jpg";
+import Logisticly from "../assets/logisticly.jpg";
+import Academicos from "../assets/learning.jpg";
+import SetRestGo  from "../assets/SetRestGo.jpg";
 
 export default function Projects() {
   return (

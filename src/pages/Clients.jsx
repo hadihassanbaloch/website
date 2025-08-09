@@ -1,9 +1,9 @@
 import React from "react";
-import Figma  from "/src/assets/partners/figma.png";
-import  OpenAI  from "/src/assets/partners/openai.png";
-import  AWS  from "/src/assets/partners/Amazon.svg";
-import Google  from "/src/assets/partners/Google-Cloud-logo.png";
-import Azure from "/src/assets/partners/Azure.png";
+import Figma   from "../assets/partners/figma.png";
+import OpenAI  from "../assets/partners/openai.png";
+import AWS     from "../assets/partners/Amazon.svg";
+import Google  from "../assets/partners/Google-Cloud-logo.png";
+import Azure   from "../assets/partners/Azure.png";
 
 
 const partners = [
