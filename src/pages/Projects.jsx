@@ -1,5 +1,9 @@
 // src/pages/Projects.jsx
 import React from 'react'
+import HRMCO from '/src/assets/HRMCO.jpg'
+import Logisticly from '/src/assets/logisticly.jpg'
+import Academicos from '/src/assets/learning.jpg'
+import SetRestGo from '/src/assets/SetRestGo.jpg'
 
 export default function Projects() {
   return (
@@ -118,7 +122,7 @@ export default function Projects() {
                 </div>
                 {/* Screenshot */}
                 <img
-                  src="/src/assets/HRMCO.jpg"
+                  src={HRMCO}
                   alt="HRMCO Dashboard"
                   className="rounded-2xl mt-8 transition-transform duration-300 group-hover:scale-105"
                 />
@@ -136,7 +140,7 @@ export default function Projects() {
               <div className="rounded-3xl bg-[#0f172a] shadow-lg p-6 pt-10 pb-8 transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl">
                 {/* Screenshot */}
                 <img
-                  src="/src/assets/logisticly.jpg"
+                  src={Logisticly}
                   alt="Logisticly Dashboard"
                   className="rounded-2xl transition-transform duration-300 group-hover:scale-105"
                 />
@@ -296,7 +300,7 @@ export default function Projects() {
                 </div>
                 {/* Screenshot */}
                 <img
-                  src="/src/assets/learning.jpg"
+                  src={Academicos}
                   alt="Academicos Dashboard"
                   className="rounded-2xl mt-8 transition-transform duration-300 group-hover:scale-105"
                 />
@@ -314,7 +318,7 @@ export default function Projects() {
               <div className="rounded-3xl bg-[#18181b] shadow-lg p-6 pt-10 pb-8 transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl">
                 {/* Screenshot */}
                 <img
-                  src="/src/assets/SetRestGo.jpg"
+                  src={SetRestGo}
                   alt="SetRestGo Dashboard"
                   className="rounded-2xl transition-transform duration-300 group-hover:scale-105"
                 />
@@ -401,7 +405,7 @@ export default function Projects() {
           <div className="flex flex-row gap-6">
             <a
               href="#"
-              className="inline-flex items-center gap-2 px-10 py-4 rounded-lg bg-red-500 hover:bg-red-600 text-white font-bold text-lg shadow transition focus:outline-none"
+              className="inline-flex items-center gap-2 px-10 py-4 rounded-lg bg-[#ff5b4d] text-white font-bold text-lg shadow transform transition-transform duration-200 ease-out hover:scale-105 hover:-translate-y-0.5 focus:outline-none"
             >
               Get Started
               <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
@@ -410,7 +414,8 @@ export default function Projects() {
             </a>
             <a
               href="#"
-              className="inline-flex items-center gap-2 px-10 py-4 rounded-lg border-2 border-red-400 text-red-500 font-bold text-lg bg-white hover:bg-red-50 transition focus:outline-none"
+              className="inline-flex items-center gap-2 px-10 py-4 rounded-lg border-2 border-[#ff5b4d] text-[#ff5b4d] font-bold text-lg bg-white transition-colors duration-200 focus:outline-none
+                hover:bg-[#ff5b4d] hover:text-white"
               target="_blank" rel="noopener noreferrer"
             >
               View Portfolio

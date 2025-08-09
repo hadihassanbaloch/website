@@ -1,11 +1,17 @@
 import React from "react";
+import Figma  from "/src/assets/partners/figma.png";
+import  OpenAI  from "/src/assets/partners/openai.png";
+import  AWS  from "/src/assets/partners/Amazon.svg";
+import Google  from "/src/assets/partners/Google-Cloud-logo.png";
+import Azure from "/src/assets/partners/Azure.png";
+
 
 const partners = [
-  { name: "Figma", logo: "/src/assets/partners/figma.png" },
-  { name: "OpenAI", logo: "/src/assets/partners/openai.svg" },
-  { name: "AWS", logo: "/src/assets/partners/Amazon.svg" },
-  { name: "Google Cloud", logo: "/src/assets/partners/Google-Cloud-logo.png" },
-  { name: "Azure", logo: "/src/assets/partners/Azure.png" },
+  { name: "Figma", logo: Figma },
+  { name: "OpenAI", logo: OpenAI },
+  { name: "AWS", logo:  AWS },
+  { name: "Google Cloud", logo: Google },
+  { name: "Azure", logo: Azure },
 ];
 
 const clients = [

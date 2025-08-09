@@ -1,5 +1,6 @@
 import React from 'react';
-import { Code, Brain, ShoppingCart, Smartphone, TrendingUp } from 'lucide-react';
+import { Code, ShoppingCart, Smartphone, TrendingUp } from 'lucide-react';
+import RobotAI from '/src/assets/robot.svg';
 
 const ServicesSection = () => {
   return (
@@ -64,7 +65,7 @@ const ServicesSection = () => {
                 <div className="w-24 h-24 rounded-full border-4 border-gray-100 flex items-center justify-center animate-ai-spin"
                   style={{ borderRightColor: '#ef4444'}}>
                   {/* Robot Icon */}
-                  <img src ='/src/assets/robot.svg' alt="AI Robot" className="w-12 h-12" />
+                  <img src ={RobotAI} alt="AI Robot" className="w-12 h-12" />
                   {/* Popup Button */}
                   <AIPopup />
                 </div>

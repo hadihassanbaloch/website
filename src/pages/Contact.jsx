@@ -20,8 +20,8 @@ export default function Contact() {
           <h3 className="text-2xl font-semibold mb-6">Let’s Connect</h3>
           <ul className="space-y-6">
             <li className="flex items-start gap-4">
-              <div className="p-3 bg-red-100 rounded-lg">
-                <Mail className="w-6 h-6 text-red-500" />
+              <div className="p-3 bg-[#ff5b4d] bg-opacity-20 rounded-lg">
+                <Mail className="w-6 h-6 text-[#ff5b4d]" />
               </div>
               <div>
                 <p className="font-medium">Email</p>
@@ -29,8 +29,8 @@ export default function Contact() {
               </div>
             </li>
             <li className="flex items-start gap-4">
-              <div className="p-3 bg-red-100 rounded-lg">
-                <Phone className="w-6 h-6 text-red-500" />
+              <div className="p-3 bg-[#ff5b4d] bg-opacity-20 rounded-lg">
+                <Phone className="w-6 h-6 text-[#ff5b4d]" />
               </div>
               <div>
                 <p className="font-medium">Phone</p>
@@ -38,8 +38,8 @@ export default function Contact() {
               </div>
             </li>
             <li className="flex items-start gap-4">
-              <div className="p-3 bg-red-100 rounded-lg">
-                <MapPin className="w-6 h-6 text-red-500" />
+              <div className="p-3 bg-[#ff5b4d] bg-opacity-20 rounded-lg">
+                <MapPin className="w-6 h-6 text-[#ff5b4d]" />
               </div>
               <div>
                 <p className="font-medium">Location</p>
@@ -60,25 +60,25 @@ export default function Contact() {
               {/* Full Name */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Full Name <span className="text-red-500">*</span>
+                  Full Name <span className="text-[#ff5b4d]">*</span>
                 </label>
                 <input
                   type="text"
                   placeholder="Enter your full name"
                   required
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ff5b4d]"
                 />
               </div>
               {/* Email Address */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Email Address <span className="text-red-500">*</span>
+                  Email Address <span className="text-[#ff5b4d]">*</span>
                 </label>
                 <input
                   type="email"
                   placeholder="your.email@company.com"
                   required
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ff5b4d]"
                 />
               </div>
             </div>
@@ -91,27 +91,27 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Your company name (optional)"
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400"
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ff5b4d]"
               />
             </div>
 
             {/* Message */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
-                Message <span className="text-red-500">*</span>
+                Message <span className="text-[#ff5b4d]">*</span>
               </label>
               <textarea
                 placeholder="Tell us about your project, goals, or any questions you have…"
                 rows={5}
                 required
-                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-400 resize-none"
+                className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#ff5b4d] resize-none"
               />
             </div>
 
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full inline-flex items-center justify-center gap-2 bg-red-500 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-red-600 transition-transform duration-200 ease-out hover:scale-105"
+              className="w-full inline-flex items-center justify-center gap-2 bg-[#ff5b4d] text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-[#ff5b4d] transition-transform duration-200 ease-out hover:scale-105"
             >
               <Send className="w-5 h-5 -ml-1" />
               Send Message

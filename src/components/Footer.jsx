@@ -1,18 +1,19 @@
 import React from "react";
+import logo from "../assets/Symbol.png";
 
 export default function Footer() {
   return (
     <footer id = 'footer' className="py-20 md:py-28 bg-gradient-to-br from-neutral-100 to-white relative overflow-hidden">
       <div className="max-w-4xl mx-auto flex flex-col items-center text-center">
         {/* Logo Circle */}
-        <div className="w-12 h-12 rounded-full bg-red-400 flex items-center justify-center mb-4">
-          <span className="text-white text-2xl font-bold">C</span>
+        <div className="w-12 h-12 flex items-center justify-center mb-4">
+          <img src={logo} alt="Creative Energy Logo" className="h-10 w-10" />
         </div>
         <div className="mb-2 text-lg font-semibold text-gray-900">Creative Energy</div>
         <div className="text-gray-400 mb-6">Futuristic Digital Solutions</div>
         {/* Navigation Links */}
         <nav className="mb-6">
-          <ul className="flex flex-wrap justify-center gap-6 text-red-400 font-medium text-base">
+          <ul className="flex flex-wrap justify-center gap-6 text-[#ff5b4d] font-medium text-base">
             <li><a href="#">Products</a></li>
             <li><a href="#">Studio</a></li>
             <li><a href="#">Clients</a></li>
