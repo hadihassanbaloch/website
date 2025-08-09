@@ -20,7 +20,7 @@ export default function Contact() {
           <h3 className="text-2xl font-semibold mb-6">Let’s Connect</h3>
           <ul className="space-y-6">
             <li className="flex items-start gap-4">
-              <div className="p-3 bg-[#ff5b4d] bg-opacity-20 rounded-lg">
+              <div className="p-3 bg-[#ff5b4d]/15 bg-opacity-20 rounded-lg">
                 <Mail className="w-6 h-6 text-[#ff5b4d]" />
               </div>
               <div>
@@ -29,7 +29,7 @@ export default function Contact() {
               </div>
             </li>
             <li className="flex items-start gap-4">
-              <div className="p-3 bg-[#ff5b4d] bg-opacity-20 rounded-lg">
+              <div className="p-3 bg-[#ff5b4d]/15 bg-opacity-20 rounded-lg">
                 <Phone className="w-6 h-6 text-[#ff5b4d]" />
               </div>
               <div>
@@ -38,7 +38,7 @@ export default function Contact() {
               </div>
             </li>
             <li className="flex items-start gap-4">
-              <div className="p-3 bg-[#ff5b4d] bg-opacity-20 rounded-lg">
+              <div className="p-3 bg-[#ff5b4d]/15 bg-opacity-20 rounded-lg">
                 <MapPin className="w-6 h-6 text-[#ff5b4d]" />
               </div>
               <div>
