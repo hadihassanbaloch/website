@@ -1,0 +1,39 @@
+name: Build & Deploy (FTPS to cPanel)
+
+on:
+  push:
+    branches: [ main ]   # change if your default branch is different
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install deps
+        run: npm ci || npm install
+
+      - name: Build Vite
+        run: npm run build
+
+      # Upload dist/ to your domain root via FTPS (port 21)
+      - name: Deploy via FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          password: ${{ secrets.DEPLOY_PASS }}
+          port: ${{ secrets.DEPLOY_PORT }}      # 21
+          protocol: ftps                        # explicit FTPS
+          local-dir: dist/
+          server-dir: ${{ secrets.DEPLOY_REMOTE_DIR }}/
+          dangerous-clean-slate: true           # delete files not in dist on the server
