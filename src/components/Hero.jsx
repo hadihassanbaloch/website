@@ -23,7 +23,7 @@ export default function Hero() {
             Igniting Digital Innovation, One Vision at a Time
           </h2>
           <p className="mt-6 text-center text-gray-700 leading-relaxed md:text-lg max-w-3xl mx-auto">
-            Transform your boldest ideas into breakthrough digital experiences.
+            Transform your good ideas into breakthrough digital experiences.
             We combine cutting-edge technology with creative brilliance to deliver
             solutions that don’t just meet the future—they create it.
           </p>
