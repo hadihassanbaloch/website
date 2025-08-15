@@ -1,6 +1,5 @@
 // src/pages/MainPage.jsx
 import React from 'react'
-import ParticlesBackground from '../components/ParticlesBackground'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Services from './Services'
@@ -16,9 +15,7 @@ import Footer from '../components/Footer'
 
 export default function MainPage() {
   return (
-    <div className="relative overflow-hidden">
-      {/* Persistent animated background and navbar */}
-      <ParticlesBackground />
+    <div className="relative overflow-hidden bg-[#4D2D8C]">
       {/* Scrollable sections stack */}
       <div className="relative z-10 mx-auto max-w-screen-xl px-[10px] pt-12"> 
         <Navbar />
