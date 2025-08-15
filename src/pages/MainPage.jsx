@@ -15,7 +15,7 @@ import Footer from '../components/Footer'
 
 export default function MainPage() {
   return (
-    <div className="relative overflow-hidden bg-[#4D2D8C]">
+    <div className="relative overflow-hidden bg-black">
       {/* Scrollable sections stack */}
       <div className="relative z-10 mx-auto max-w-screen-xl px-[10px] pt-12"> 
         <Navbar />
