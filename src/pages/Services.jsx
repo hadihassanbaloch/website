@@ -7,7 +7,7 @@ const ServicesSection = () => {
     <section id="services" className="flex flex-col">
       {/* Header Container */}
       <div className="text-center mb-16">
-        <h2 className="text-5xl font-bold text-white mb-6">
+        <h2 className="text-5xl font-bold text-[#FF5B4D] mb-6">
           Our Digital Solutions
         </h2>
         <p className="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
